@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> CANVAS FOR IMPACT </title>
+	<style>
+#header-video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+	body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+	}
+
+	.benefits{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 40px;
+	text-align: center;
+	background-color: #F5E7B3;
+	}
+
+	.benefit{
+	max-width: 200px;
+	}
+	
+	.benefit img{
+	width: 100px;
+	height:100px;
+	}
+
+	.benefit h3{
+	margin-top: 10px;
+	font-size: 1.2em;
+	}
+
+	footer{
+	background-color: #0B1F47;
+	color: #F5E7B3;
+	padding:20px;
+	text-align: center;
+	line-height: 25px;
+	margin-bottom: -15px;
+	}
+
+	.footer-links,
+	.social-icons{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	padding: 0;
+	}
+
+	.footer-links a,
+	.social-icons a{
+	color: #F5E7B3;
+	text-decoration: none;
+	}
+
+	.footer-links a:hover,
+	.social-icons a:hover{
+	color: #F5E7B3;
+	}
+
+	.H1 {
+  color: #F5E7B3;
+  border: 50px;	
+  font-family:algerian;
+  padding: 90px;
+  font-size: 30px;
+  font-weight: 300;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 0px;
+  background-color:#0B1F47;
+  TEXT-ALIGN:CENTER;
+  color:#F5E7B3;
+  text-transform: uppercase;
+  margin: 30px 0 0 25px;
+ margin-top: -20px;
+ margin-left: 0px;
+ opacity: 90%;
+}	
+.pop{
+border-radius:25px;
+}
+.new{
+margin-left:10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+	margin-top: 20px;
+}
+button{
+            color:#F5E7B3;
+            background-color:#0B1F47;
+            padding:5px;
+            border-radius:10px;
+            font-size:20px;
+            font-weight:bold;
+            border:none;
+		opacity: 90%;
+		list-style: none;
+		height: 35px;
+		width: 140px;
+		flex-basis: 33.33%;
+        }
+        button:hover{
+            text-decoration: none;
+            color:#0B1F47;
+		width: 150px;
+		background-color: #F5E7B3;
+        }
+        .h3 {
+color: #F5E7B3;
+text-align:center; 	
+position: left;
+font-family: times new romans;
+font-size: 20px;
+background:#0B1F47;
+width:1000px auto;
+height:800px auto;
+opacity:70%;
+margin-left:0px;
+line-height: 30px;
+margin-top: 50px;
+font-weight: bold;
+}
+
+.footer1 {
+  background-color: #F5E7B3;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border: white;
+}
+
+
+.footer1 .container {
+  max-width: 1800px auto;
+width: 3000px auto;
+  margin: 0 auto;
+}
+
+
+.footer1 .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.footer1 .col-md-4 {
+  flex-basis: 33.33%;
+  font-size: 17px;
+	line-height: 25px;
+background:#333;
+color:#F5E7B3;
+opacity: 100%;
+}
+
+
+.footer1 h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+	font-size: 20px;}
+
+
+.footer1 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.footer1 li {
+  margin-bottom: 10px;
+}
+
+
+.footer1 a {
+  color: #F5E7B3;
+  text-decoration: none;
+}
+.footer1 a:hover{
+color: #F5E7B3;
+font-weight:bold;
+}
+
+.footer1 .HI {font-size: 10px;
+margin-right: 58px;
+	}
+.footer1 .ME {font-size:10px;
+}
+.footer1 .ME li{
+list-style: none;
+line-height:100px;
+}
+button1{
+            color:#F5E7B3;
+            background-color:#0B1F47;
+            padding:5px;
+            border-radius:10px;
+            font-size:20px;
+            font-weight:bold;
+            border:none;
+		opacity: 100%;
+		height: 35px;
+		width: 100% auto;
+		gap: 50px;
+        }
+        button1:hover{
+            text-decoration: none;
+            color:#0B1F47;
+		width: 150px;
+		background-color: #F5E7B3;
+        }
+button2{
+            color:white;
+            background-color:white;
+            padding:5px;
+            border-radius:10px;
+            font-size:20px;
+            font-weight:bold;
+            border:none;
+		opacity: 100%;
+		height: 35px;
+		width: 200px;
+		gap: 50px;
+        }
+        button2:hover{
+            text-decoration: none;
+            color:#0B1F47;
+		width: 150px;
+		background-color: #F5E7B3;
+        }
+	.quote{
+	font-size: 80px;
+	color: #F5E7B3;
+	font-face: Algerian;
+	}
+	</style>
+</head>
+<body>
+<BODY style="background-color:black;">
+ <div class="header" id="header-video">
+  <video autoplay muted loop id="header-video">
+    <source src="Background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+</div>
+<div class="H1">
+<p> <H1 style="TEXT-ALIGN:CENTER;"> CANVAS FOR IMPACT</H1>  </P>
+</div>
+<div class="new">
+
+<P><A HREF="#"> <button class="button">ABOUT SITE </button></A></P><P>
+<A HREF=" # "> <button class="button">HOME</button> </A></P>
+<P><A HREF=" #"><button class="button"> CONTACT US</button></A></P>
+</div>
+<div class="pop"><img src="pics/Logo.png"
+height="150px" width="150px" border-radius="25px" class="pop"></img></div>
+</div>
+</div>
+
+
+<div class="h3">
+<br><p><div class="quote"><h1>Introduction</h1></div>In today's fast-moving world, topics that deeply
+affect mental health,societal progress, and individual well-being often get lost in the noise.
+Canvas for Impact aims to bring these conversations to the forefront. Whether it's about mental health, sustainability, equality or self-growth. </br>This wil be through
+engaging, well-researched content and eye-catching visuals.
+We believe that creativity has the power to inform, inspire, and initiate meaningful change. By combining strong narratives 
+with aesthetic design, we strive to build a mindful commuinity yhat reflects, discusses, and acts on the issues that truly matter.</p></br>
+</div>
+
+<!--Key Benefits-->
+<section class="benefits">
+<div class="benefit">
+<img src="pics/1.png" alt="Benefit Icon">
+<h3> Spark Awareness </h3>
+<p> Drive change through visual creations. </p>
+</div>
+<div class="benefit">
+<img src="pics/2.png" alt="Benefit Icon">
+<h3> Creativity</h3>
+<p> Creations that inspire, initiate and and inform meaningful change.</p>
+</div>
+<div class="benefit">
+<img src="pics/3.png" alt="Benefit Icon">
+<h3>Collaborativeness</h3>
+<p>Engage with like-minded change makers for this cause.</p>
+</div>
+</section>
+
+<footer class="footer1">
+
+  <div class="container">
+
+    <div class="row">
+  
+    <div class="col-md-4">
+
+
+        <H4>About Us</h4>
+ 
+       <p>Canvas For Impact is a student-led non-profit initiative dedicated to shedding light on crtical social, emotional and global issues that are often overlooked in everyday conversations.
+<br> Our mission is to spark awareness and drive change through the power of visual story-telling, thoughtful write-ups, and creative graphic design.</br></p>
+
+      </div>
+     <div class="col-md-4">
+ 
+        <DIV CLASS="ME"> <h4>Quick Links</h4>
+  </DIV>
+      <ul>
+          <li><a href="#"><button class="button1">Home</button></a></li>
+ 
+         <li><a href="#"><button class="button1">About</button></a></li>
+  
+        <li><a href="#"><button class="button1">Contact</button></a></li>
+        </ul>
+      </div>
+   
+   <div class="col-md-4">
+  
+   <DIV CLASS="HI">
+   <h4>Contact Us</h4>
+   
+   <p>
+ <H4> <br>Canvas For Impact,</br>
+ <br>India</br>
+      <br>+91 88515 20800</br>
+  <br>+91 6387629692</br>
+    <a href="mailto:canvasforimpact@gmail.com"><button class="button2">Email Us</button></a></div>
+</H4>
+
+       </p>
+      </div>
+    </div>
+
+<footer>
+<ul class="footer-links">
+<li><a href="#">About Us</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">FAQ</a></li>
+</ul>
+
+<div class="social-icons">
+<a href="#">Facebook</a>
+<a href="#">X</a>
+<a href="https://www.instagram.com/canvas_for_impact?igsh=MTI3NHIzcWtiOQzeg==">Instagram</a>
+<a href="#">Youtube</a>
+<a href="#">Discord</a>
+</div>
+<p> Copyright &copy2025 Canvas For Impact. All rights reserved. Powered by Alex Technologies. </p>
+</footer>
+</body>
+</html> 
+
+
